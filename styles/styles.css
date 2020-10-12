@@ -4,18 +4,30 @@ body{
 
 #nav-bar{
     background-color: gray;
-    padding: 5px;
-    width: 25%;
+    height: 100%;
+    margin: 0px;
+    padding-top: 10px;
+    width: 20%;
 }
 
 #nav-bar li{
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 0px;
     padding: 5px;
+    list-style-type: none;
+    
+}
+
+#nav-bar li:hover{
+    background-color: rgb(4, 175, 27);  
     
 }
 
 #nav-bar li a{
     color: black;
     font-size: 14pt;
+    margin-left: 5px;
     text-decoration: none;
     
 }
