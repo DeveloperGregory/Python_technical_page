@@ -2,12 +2,24 @@ body{
     margin: 0px;
 }
 
+code{
+    background-color: rgb(216, 215, 215);
+}
+
+#main-doc{
+    left: 22%;
+    position: relative;
+    top: -500px;
+    width: 70%;
+}
+
 #nav-bar{
     background-color: gray;
     height: 100%;
     margin: 0px;
-    padding-top: 10px;
+    
     width: 20%;
+    z-index: 2;
 }
 
 #nav-bar li{
@@ -21,7 +33,7 @@ body{
 
 #nav-bar li:hover{
     background-color: rgb(4, 175, 27);  
-    
+    margin-left: 20px;
 }
 
 #nav-bar li a{
@@ -30,4 +42,13 @@ body{
     margin-left: 5px;
     text-decoration: none;
     
+}
+
+#nav-header{
+    background-color: white;
+      
+}
+
+#nav-header img{
+    height: 75px;
 }
