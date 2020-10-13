@@ -13,18 +13,18 @@
             <h2>Python Documentation</h2>
         </header>
             <!--Anchor element per section-->
-            <li><a href="">What is Python</a></li>
-            <li><a href="">Printing to the Screen</a></li>
-            <li><a href="">Variables</a></li>
-            <li><a href="">Getting Input from Users</a></li>
-            <li><a href="">List</a></li>
-            <li><a href="">Tuples</a></li>
-            <li><a href="">Conditionals</a></li>
-            <li><a href="">Functions</a></li>
-            <li><a href="">Loops</a></li>
-            <li><a href="">Dictionaries</a></li>
-            <li><a href="">Classes</a></li>
-            <li><a href="">Modules</a></li>
+            <li><a href="#what_is_python">What is Python</a></li>
+            <li><a href="#printing_to_the_screen">Printing to the Screen</a></li>
+            <li><a href="#variables">Variables</a></li>
+            <li><a href="#getting_input_from_users">Getting Input from Users</a></li>
+            <li><a href="#list">List</a></li>
+            <li><a href="#tuples">Tuples</a></li>
+            <li><a href="#conditionals">Conditionals</a></li>
+            <li><a href="#functions">Functions</a></li>
+            <li><a href="#loops">Loops</a></li>
+            <li><a href="#dictionaries">Dictionaries</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#modules">Modules</a></li>
             
         
     </nav>
@@ -37,7 +37,7 @@
             <header id='what_is_python'>
                 <h3>What is Python</h3>
             </header>
-            <p>Python is what I call a pre compiled language.</p>
+            <p>Python is a interperted language.  The code is passed through an interputer.</p>
             <p>In C++ and several other programming languages you need to compile your code before the computer can use it.
                 Each computer OS handles machine code differently.  So if you want to develop a program for both IOS and Windows
                 you have to write 2 different programs to be able to run the program on either machine.
@@ -68,48 +68,98 @@
                 <h3>Variables</h3>
             </header>
             <p>A variable is a way to store information for future use.</p>
+            <p>To create a variable create a name which has signficance to the data you are storing.</p>
+            <code>myVariable = "An example of Variables"</code>
             <p>Variables store different data types:</p>
             <p>String - A collection of text, numbers, punctuation, and everything that is not one of the other data types.</p>
-            <p>Number - Every </p>
+            <code>this_is_a_string = "This is a string."</code>
+            <p>Number - Every digit that mathmatics can be applied to. </p>
+            <code>this_is_a_number = 42</code>
+            <p>Boolean - True or False</p>
+            <code>this_is_a_boolean = True</code>
+
         </section>
         <section class='main-section'>
             <header id='getting_input_from_users'>
-
+                <h3>Getting Input from Users</h3>
             </header>
+            <p>One of the most important aspects of a program is getting input.  Users are the primary source of input
+                but it can come from files or the computer itself.
+            </p>
+            <p>
+                We will cover the other sources of input later on but for now we will focus on getting input from the user.
+            </p>
+            <p>To get user input all we have to do is create a variable for that input to go into and then use Input(prompt)</p>
+            <code>user_data = input("Please input some data: ")</code>
+            <p>This will display</p>
+            <p>The program will wait for a response from the user and then assign it to the variable</p>
+            <p>So in the previous example user_data was the variable and let's say we used the number 42 as the input.  We then 
+                can use the print statement to display what the user inputted.
+            </p>
+            <code>user_data = input("Please input some data: ")</code><br>
+            <code>print(user_display)</code><br>
+            <code>42</code>
+
+
         </section>
         <section class='main-section'>
             <header id='list'>
-
+                <h3>Lists</h3>
+                <p>List are ways to store many points of data into one variable for later retrieval</p>
+                <p>Let's take the following example which will only use variables</p>
+                <code>myName = "Jimmy"</code><br>
+                <code>myAge = 31</code><br>
+                <code>is_married = False</code>
+                <p>Then any time we had to access the varibles and get information we would have to name all 3</p>
+                <code>print(myName + " " + myAge + " " + is_married)</code>
+                <p>Which quickly becomes tedious.  A list is easier to create and access when needed.</p>
+                <code>user_info = ["Jimmy",31, False]</code>
+                <p>The information is now store in one variable.  Notice the square brackets these tell Python the information inside is a List
+                    make sure to seperate out each item with a comma.
+                </p>
             </header>
         </section>
         <section class='main-section'>
             <header id='tuples'>
-
+                <h3>Tuples</h3>
+                <p>A way to store mutiple pieces of data in one variable that cannot be changed after
+                    the creation of the tuple.
+                </p>
+                <code>myTuple = (42, "Hello, World", True)</code>
+                <p>The above tuple now has 3 diffirent pieces of data store in it.  The parenthesis around the items tells
+                    Python that it is a tuple.
+                </p>
+                <p>You can then later access the data by accessing the variable and then which item you want that it is storing.  Keep in mind 
+                    Python like most programming languages begin counting at 0.
+                </p>
+                <code>print(myTuple(0))</code><br>
+                <p>Will display</p>
+                <code>42</code>
             </header>
         </section>
         <section class='main-section'>
             <header id='conditionals'>
-
+                <h3>Conditionals</h3>
             </header>
         </section>
         <section class='main-section'>
             <header id='functions'>
-
+                <h3>Functions</h3>
             </header>
         </section>
         <section class='main-section'>
             <header id='loops'>
-
+                <h3>Loops</h3>
             </header>
         </section>
         <section class='main-section'>
             <header id='classes'>
-
+                <h3>Classes</h3>
             </header>
         </section>
         <section class='main-section'>
             <header id='modules'>
-
+                <h3>Modules</h3>
             </header>
         </section>
     </main>
