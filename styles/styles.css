@@ -1,10 +1,36 @@
 body{
     list-style-type: none;
-    margin: 0px;
+    
 }
 
 code{
     background-color: rgb(216, 215, 215);
+    margin: 2px 0px;
+    padding: 2px;
+}
+
+samp{
+    background-color: black;
+    color: cornsilk;
+    margin-left: 5px;
+    
+}
+
+.main-section header{
+    font-size: 18pt;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.sample-code{
+    background-color: lightgray;
+}
+
+.sample-output{
+    background-color: black;
+    margin: 2px 0px;
+    padding: 3px;
+    
 }
 
 #main-doc{
@@ -13,6 +39,8 @@ code{
     top: 0px;
     width: 70%;
 }
+
+
 
 #navbar{
     background-color: gray;
@@ -26,6 +54,8 @@ code{
 }
 
 #navbar a{
+    border-style: solid;
+    border-width: thin;
     color: black;
     font-size: 14pt;
     margin-left: 15px;
@@ -41,7 +71,8 @@ code{
 
 #nav-header{
     background-color: white;
-      
+    font-size: 24pt;
+    text-align: center;
 }
 
 #nav-header img{
