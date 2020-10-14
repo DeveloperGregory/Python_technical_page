@@ -7,36 +7,34 @@
     <title>Python Technical Page</title>
 </head>
 <body>
-    <nav id='nav-bar'>
+    <nav id='navbar'>
         <header id='nav-header'>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/500px-Python_logo_and_wordmark.svg.png" alt="Python Logo">
             <h2>Python Documentation</h2>
         </header>
             <!--Anchor element per section-->
-            <li><a href="#what_is_python">What is Python</a></li>
-            <li><a href="#printing_to_the_screen">Printing to the Screen</a></li>
-            <li><a href="#variables">Variables</a></li>
-            <li><a href="#getting_input_from_users">Getting Input from Users</a></li>
-            <li><a href="#list">List</a></li>
-            <li><a href="#tuples">Tuples</a></li>
-            <li><a href="#conditionals">Conditionals</a></li>
-            <li><a href="#loops">Loops</a></li>
-            <li><a href="#functions">Functions</a></li>
-            <li><a href="#dictionaries">Dictionaries</a></li>
-            <li><a href="#classes">Classes</a></li>
-            <li><a href="#modules">Modules</a></li>
+        <a class ='nav-link' href="#What_is_Python">What is Python</a>
+        <a class ='nav-link' href="#Printing_to_the_Screen">Printing to the Screen</a>
+        <a class ='nav-link' href="#Variables">Variables</a>
+        <a class ='nav-link' href="#Getting_input_from_Users">Getting Input from Users</a>
+        <a class ='nav-link'href="#List">List</a>
+        <a class ='nav-link' href="#Tuples">Tuples</a>
+        <a class ='nav-link' href="#Conditionals">Conditionals</a>
+        <a class ='nav-link' href="#Loops">Loops</a>
+        <a class ='nav-link' href="#Functions">Functions</a>
+        <a class ='nav-link' href="#Dictionaries">Dictionaries</a>
+        <a class ='nav-link' href="#Classes">Classes</a>
+        <a class ='nav-link' href="#Modules">Modules</a>
             
         
     </nav>
     <!----Main Documentation -->
     <main id='main-doc'>
-        <section class='main-section'>
+        <section class='main-section'  id='What_is_Python'>
             <!--10 p elements per section-->
             <!--5 code elements per section-->
             <!--5 li elements per section-->
-            <header id='what_is_python'>
-                <h3>What is Python</h3>
-            </header>
+            <header>What is Python</header>
             <li>
                 <p>
                     Python was created in 1991 by Guido van Rossum.  Rossum's goal was to create a programming language that emphasized code readability.   
@@ -67,10 +65,8 @@
             </li>
                         
         </section>
-        <section class='main-section'>
-            <header id='printing_to_the_screen'>
-                <h3>Printing to the Screen</h3>
-            </header>
+        <section class='main-section' id='Printing_to_the_Screen'>
+            <header>Printing to the Screen</header>
             <li>
                 <p>To do display text on the screen:</p>
                 <code>print(what you want to print)</code>
@@ -101,10 +97,8 @@
 
             </li>
         </section>
-        <section class='main-section'>
-            <header id='variables'>
-                <h3>Variables</h3>
-            </header>
+        <section class='main-section'  id='Variables'>
+            <header>Variables</header>
             <li>
                 <p>Strings</p>
                 <p>Create a string by surrounding it with quotes.</p>
@@ -135,10 +129,8 @@
             <code>this_is_a_boolean = True</code>
 
         </section>
-        <section class='main-section'>
-            <header id='getting_input_from_users'>
-                <h3>Getting Input from Users</h3>
-            </header>
+        <section class='main-section' id='Getting_Input_from_Users'>
+            <header>Getting Input from Users</header>
             <p>One of the most important aspects of a program is getting input.  Users are the primary source of input
                 but it can come from files or the computer itself.
             </p>
@@ -158,9 +150,8 @@
 
 
         </section>
-        <section class='main-section'>
-            <header id='list'>
-                <h3>Lists</h3>
+        <section class='main-section' id='List'>
+            <header>List</header>
                 <p>List are ways to store many points of data into one variable for later retrieval</p>
                 <p>Let's take the following example which will only use variables</p>
                 <code>myName = "Jimmy"</code><br>
@@ -173,11 +164,11 @@
                 <p>The information is now store in one variable.  Notice the square brackets these tell Python the information inside is a List
                     make sure to seperate out each item with a comma.
                 </p>
-            </header>
+            
         </section>
-        <section class='main-section'>
-            <header id='tuples'>
-                <h3>Tuples</h3>
+        <section class='main-section' id='Tuples'>
+            <header>Tuples</header>
+                
                 <p>A way to store mutiple pieces of data in one variable that cannot be changed after
                     the creation of the tuple.
                 </p>
@@ -191,12 +182,10 @@
                 <code>print(myTuple(0))</code><br>
                 <p>Will display</p>
                 <code>42</code>
-            </header>
+            
         </section>
-        <section class='main-section'>
-            <header id='conditionals'>
-                <h3>Conditionals</h3>
-            </header>
+        <section class='main-section'  id='Conditionals'>
+            <header>Conditionals</header>
             <p>Python uses if and else as conditionals.</p>
             <p>When using conditional make sure to use an operator(==) not an assignment(=)</p>
             <code>myVar = 'Hello'</code><br>
@@ -204,26 +193,20 @@
             <code>    print(myVar)</code><br>
             <p>The above code will print "Hello" to your screen</p>
         </section>
-        <section class='main-section'>
-            <header id='loops'>
-                <h3>Loops</h3>
-            </header>
+        <section class='main-section'  id='Loops'>
+            <header>Loops</header>
         </section>
-        <section class='main-section'>
-            <header id='functions'>
-                <h3>Functions</h3>
-            </header>
+        <section class='main-section' id='Dictionaries'>
+            <header>Functions</header>
         </section>
-        
-        <section class='main-section'>
-            <header id='classes'>
-                <h3>Classes</h3>
-            </header>
+        <section class='main-section' id='Functions'>
+            <header>Functions</header>
         </section>
-        <section class='main-section'>
-            <header id='modules'>
-                <h3>Modules</h3>
-            </header>
+        <section class='main-section' id='Classes'>
+            <header>Classes</header>
+        </section>
+        <section class='main-section' id='Modules'>
+            <header>Modules</header>
         </section>
     </main>
     
