@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav id='navbar'>
-        <header id='nav-header'>Python Documentation
+        <header id='nav-header'>Python Basics
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/500px-Python_logo_and_wordmark.svg.png" alt="Python Logo">
             
         </header>
@@ -41,7 +41,7 @@
                     Python is currently on version 3.9.0.       
                 </p>
                 <p>
-                    For more on Python you can go to their website: <a href="https://www.python.org" target='_blank'>python.org</a>
+                    This is meant to be a starter technical page for Python and leaves a lot out. For more on Python you can go to their website: <a href="https://www.python.org" target='_blank'>python.org</a>
                 </p>
            
                         
@@ -86,7 +86,6 @@
         <section class='main-section'  id='Variables'>
             <header>Variables</header>
                 <p>Python uses three main data types for storing variables. String, Numeric, and Boolean.</p>
-                <li>
                     <h4>Strings</h4>
                     <p>A string is text that is surrounded by quotes. <code>string_example = "This is a string!"</code></p>
                     <p>
@@ -112,7 +111,7 @@
                             <code>print(my_string[4])</code><br>
                         </div>
                         <div class='sample-output'>
-                            <samp>t</samp>
+                            <samp>y</samp>
                         </div>
                     </p>
                     <p>
@@ -125,82 +124,115 @@
                             <samp>16</samp>
                         </div>
                     </p>
-                </li>
-                <li>
-                    <h4>Numbers</h4>
-                    <p>A number is any value that you use to do calculations.  <code>my_number = 17</code> Once you</p>
-                    <div class='sample-code'>
-                        <code></code>
-                    </div>
-                </li>
-                <li></li>
-                
-              
+                    <p>
+                        There are several other methods for strings.
+                        <li><code>.upper()</code> will return the string but with all the letters captalized.</li>
+                        <li><code>.lower()</code> will return the string but with all the letters in lowercase.</li>
+                        <li><code>.title()</code> will return the string but in Title Case.</li>
+                        <li><code>.join()</code> will connect the parameter to the string.</li>
+                        <li><code>.isdigit()</code> will return true if all the character in the string are digits.</li>
+                        Find all the sting methods at <a href="https://www.w3schools.com/python/python_ref_string.asp" target='_blank'>W3 Schools Python</a>.
 
+                    </p>
+                    <h4>Numbers</h4>
+                    <p>A number is any value that you use to do calculations.  <code>my_number = 17</code> 
+                        <div class='sample-code'>
+                            <code>love_potion_num = 9</code><br>
+                            <code>print(love_potion_num)</code>
+                        </div>
+                        <div class='sample-output'>
+                            <samp>9</samp>
+                        </div>
+                    </p>
+                    <p>
+                        Some methods for numbers.
+                        <li><code>.abs()</code> will return the absolute value of the number.</li>
+                        <li><code>.round()</code> will return the number rounded to the amount of places set.</li>
+                    </p>
+                    <h4>Boolean</h4>
+                    <p>Boolean values are true or false and are implemented by <code>my_bool = true</code>
+                        <div class='sample-code'>
+                            <code>my_bool = false</code><br>
+                            <code>print(my_bool)</code>
+                        </div>
+                        <div class='sample-output'>
+                            <samp>false</samp>
+                        </div>
+
+                    </p>
         </section>
         <section class='main-section' id='Getting_Input_from_Users'>
             <header>Getting Input from Users</header>
-            <p>One of the most important aspects of a program is getting input.  Users are the primary source of input
-                but it can come from files or the computer itself.
+            <p>To get input from a user you use <code>input()</code>
+                <div class='sample-code'>
+                    <code>user_input = input("Need more input: ") #The user inputs Wouldn't you like to be a pepper too.</code><br>
+                    <code>print(user_input)</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>Wouldn't you like to be a pepper too</samp>
+                </div>
             </p>
-            <p>
-                We will cover the other sources of input later on but for now we will focus on getting input from the user.
-            </p>
-            <p>To get user input all we have to do is create a variable for that input to go into and then use Input(prompt)</p>
-            <code>user_data = input("Please input some data: ")</code>
-            <p>This will display</p>
-            <p>The program will wait for a response from the user and then assign it to the variable</p>
-            <p>So in the previous example user_data was the variable and let's say we used the number 42 as the input.  We then 
-                can use the print statement to display what the user inputted.
-            </p>
-            <code>user_data = input("Please input some data: ")</code><br>
-            <code>print(user_display)</code><br>
-            <code>42</code>
-
-
         </section>
         <section class='main-section' id='List'>
             <header>List</header>
-                <p>List are ways to store many points of data into one variable for later retrieval</p>
-                <p>Let's take the following example which will only use variables</p>
-                <code>myName = "Jimmy"</code><br>
-                <code>myAge = 31</code><br>
-                <code>is_married = False</code>
-                <p>Then any time we had to access the varibles and get information we would have to name all 3</p>
-                <code>print(myName + " " + myAge + " " + is_married)</code>
-                <p>Which quickly becomes tedious.  A list is easier to create and access when needed.</p>
-                <code>user_info = ["Jimmy",31, False]</code>
-                <p>The information is now store in one variable.  Notice the square brackets these tell Python the information inside is a List
-                    make sure to seperate out each item with a comma.
+                <p>List are like arrays in other programming languages.  They are mutable and have no expansion limit. To create a list you use
+                    <code>[]</code> notation seperating each entry out with a comma.  To access list items use <code>[]</code> notation.  List like strings
+                    start counting at 0.
+                    <div class='sample-code'>
+                        <code>my_lst = ["Johnny", 5, "is alive!"]</code><br>
+                        <code>print(my_lst[1])</code>
+                    </div>
+                    <div class='sample-output'>
+                        <samp>5</samp>
+                    </div>
+                    You can also use <code>[-1]</code> to access the last element in the list.
+                    <div class='sample-code'>
+                        <code>my_lst = ["Johnny", 5, "is alive!"]</code><br>
+                        <code>print(my_lst[-1])</code>
+                    </div>
+                    <div class='sample-output'>
+                        <samp>is alive!</samp>
+                    </div>
                 </p>
-            
+                <p>
+                    There are several methods that can be used on lists.  Here is a few.
+                    <li><code>.append()</code> will add items to the end of a list.  <code>my_lst.append(new_item)</code></li>
+                    <li><code>.reverse()</code> will return a list of the items but in reverse order.</li>
+                    <li><code>.index()</code> will return the index of the specified item.</li>
+                </p>
+                <p>
+                    List and strings are handled similiary thus you can use some of the same methods on list that you can use on a string.
+                    Like <code>len()</code> which will return how many items you have in that list.  <code>.join()</code> will also add items
+                    to the list like it does with strings.
+                </p>
         </section>
         <section class='main-section' id='Tuples'>
             <header>Tuples</header>
-                
-                <p>A way to store mutiple pieces of data in one variable that cannot be changed after
-                    the creation of the tuple.
+                <p>
+                    Tuples are like list but are inmutable after creation.  You can create a tuple by using <code>()</code> notation.
+                    <div class='sample-code'>
+                        <code>my_tuple = ("No", "Disassemble", "Number", 5)</code><br>
+                        <code>print(my_tuple)</code>
+                    </div>
+                    <div class='sample-output'>
+                        <samp>("No", "Disassemble", "Number", 5)</samp>
+                    </div>
+                    You access items in a tuple the same as you would a list except you use <code>()</code> notation.
+                    <div class='sample-code'>
+                        <code>my_tuple = ("No", "Disassemble", "Number", 5)</code><br>
+                        <code>print(my_tuple(2))</code>
+                    </div>
+                    <div class='sample-output'>
+                        <samp>Number</samp>
+                    </div>
                 </p>
-                <code>myTuple = (42, "Hello, World", True)</code>
-                <p>The above tuple now has 3 diffirent pieces of data store in it.  The parenthesis around the items tells
-                    Python that it is a tuple.
-                </p>
-                <p>You can then later access the data by accessing the variable and then which item you want that it is storing.  Keep in mind 
-                    Python like most programming languages begin counting at 0.
-                </p>
-                <code>print(myTuple(0))</code><br>
-                <p>Will display</p>
-                <code>42</code>
-            
         </section>
         <section class='main-section'  id='Conditionals'>
             <header>Conditionals</header>
-            <p>Python uses if and else as conditionals.</p>
-            <p>When using conditional make sure to use an operator(==) not an assignment(=)</p>
-            <code>myVar = 'Hello'</code><br>
-            <code>if(myVar == 'Hello'):</code><br>  
-            <code>    print(myVar)</code><br>
-            <p>The above code will print "Hello" to your screen</p>
+            <h4>If statement</h4>
+            <p>
+
+            </p>
         </section>
         <section class='main-section'  id='Loops'>
             <header>Loops</header>
