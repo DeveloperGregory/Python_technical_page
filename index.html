@@ -60,7 +60,7 @@
                 <div class='sample-output'>
                     <samp>Hello World</samp><br>
                 </div>
-                <code>print()</code> is a method which is explained further in this document.  Some methods can be passed paramaters.  The example
+                <code>print()</code> is a method and functions will be explained further in this document.  Some methods can be passed paramaters.  The example
                 above shows that <code>"Hello World"</code> is the parameter being passed to <code>print()</code> another parameter you can pass to
                 <code>print()</code> is a variable which is described in more detail in the next section.<br>
                 <div class='sample-code'>
@@ -236,7 +236,7 @@
                 <div class='sample-code'>
                     <code>my_num = 42</code><br>
                     <code>if(my_num == 42):</code><br>
-                    <code>....print("The Answer") #The dots before print are to denote the 4 spaces tabbed in Python uses whitespace to signify that this line is part of the if statement</code>
+                    <code>....print("The Answer") #The dots before print are to denote the 4 spaces tabbed in. Python uses whitespace to signify that this line is part of the if statement</code>
                 </div>
                 <div class='sample-output'>
                     <samp>The Answer</samp>
@@ -250,12 +250,124 @@
                 <li><code><</code> Less than <code>if(15 < 17)</code> would evaluate to <samp>True</samp></li>
                 <li><code>!=</code> Not equal to <code>if("Johnny" != "Daniel")</code> would evaluate to <samp>True</samp></li>
             </p>
+            <p>
+                You can combine <code>elif:</code> and <code>else:</code> statements to extend the functionality of an if statement.
+                <div class='sample-code'>
+                    <code>comic_name = 'Action Comics'</code><br>
+                    <code>if(comic_name == 'The Amazing Spider-Man'): #checks to see if this is true if not it goes to the elif</code><br>
+                    <code>....print('That is a Marvel comic')</code><br>
+                    <code>elif(comic_name == 'Action Comics': #checks to see if this is true if not it goes to the next elif or else statement</code> <br>
+                    <code>....print('That is a DC comic')</code><br>
+                    <code>else: #will catch anything that the other ifs and elifs did not catch</code><br> 
+                    <code>...print('That is a comic I don't know.'')</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>That is a DC comic.</samp>
+                </div>
+            </p>
+            <p>
+                You can check for multiple conditions in a single if statement using the <code>and</code> or <code>or</code>. 
+                <h5><strong>and</strong></h5>
+                <div class='sample-code'>
+                    <code>miles_per_hour = 88</code><br>
+                    <code>has_plutonium = True</code><br>
+                    <code>if(miles_per_hour == 88 and has_plutonium):</code><br>
+                    <code>....print('I can time travel')</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>I can time travel.</samp>
+                </div><br>
+                <h5><strong>or</strong></h5>
+                <div class='sample-code'>
+                    <code>power_source = 'lightning'</code><br>
+                    <code>if(power_source == 'lightning' or power_source == 'plutonium'</code><br>
+                    <code>....print('1.21 gigawatts!!!')</code><br>
+                    <code>else:</code><br>
+                    <code>....print('You are stuck in 1955!!!'')</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>1.21 gigawatts!!!</samp>
+                </div>
+            </p>
+
+            <p>
+                You can use <code>in</code> keyword in an <code>if</code> statement.
+                <div class='sample-code'>
+                    <code>items = ['camera', 'vest', 'radiation suit','walkman']</code><br>
+                    <code>if 'vest' in items:</code><br>
+                    <code>....print("Are you a sailor?")</code><br>
+                </div>
+                <div class='sample-output'>
+                    <samp>Are you a sailor?</samp>
+                </div>
+            </p>
         </section>
         <section class='main-section'  id='Loops'>
             <header>Loops</header>
+            <h4>While Loops</h4>
+            <p> 
+                A <code>while():</code> loop keeps repeating the same commands contained inside the statement until the loop condition is no longer <code>True</code>
+                <div class='sample-code'>
+                    <code>i = 1</code> <br>
+                    <code>while(i < 6):</code><br>
+                    <code>....print(i)</code> <br>
+                    <code>....i++</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>1</samp><br>
+                    <samp>2</samp><br>
+                    <samp>3</samp><br>
+                    <samp>4</samp><br>
+                    <samp>5</samp><br>
+                </div>
+            </p>
+            <h4>For Loops</h4>
+            <p>
+                A <code>for "item" in "amount":</code> loop works similar to while loops but the iterator is built into the statement so you do not have to do it inside the block of code. 
+                <div class='sample-code'> 
+                    <code>for i in range(1,5):</code><br>
+                    <code>....print(i)</code><br>
+                </div>
+                <div class='sample-output'>
+                    <samp>1</samp><br>
+                    <samp>2</samp><br>
+                    <samp>3</samp><br>
+                    <samp>4</samp><br>
+                    <samp>5</samp><br>
+                </div>
+                <br>
+                <code>for</code> loops will also iterate over list, tuples, and dictionaries.
+                <div class='sample-code'>
+                    <code>justice_league = ['Batman', 'Superman', 'Wonder Woman', 'Flash', 'Aquaman', 'Cyborg']</code><br>
+                    <code>for hero in justice_league:</code><br>
+                    <code>....print(hero)</code><br>
+                </div>
+                <div class='sample-output'>
+                    <samp>Batman</samp><br>
+                    <samp>Superman</samp><br>
+                    <samp>Wonder Woman</samp><br>
+                    <samp>Flash</samp><br>
+                    <samp>Auqaman</samp><br>
+                    <samp>Cyborg</samp><br>
+                </div>
+            </p>
         </section>
         <section class='main-section' id='Dictionaries'>
             <header>Dictionaries</header>
+            <p>
+                Dictionaries hold key, value pairs and use the <code>{}</code> to be created and the<code>['key name in quotes']</code> notation to identify the value of that key.  
+                <div class='sample-code'>
+                    <code>new_dict = {</code><br>
+                    <code>'first' : 1,</code><br> 
+                    <code>'second' : '2nd',</code><br>
+                    <code>'third' : True</code><br>
+                    <code>}</code><br>
+                    <code>print(new_dict["second"]</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>2nd</samp>
+                </div>
+            </p>
         </section>
         <section class='main-section' id='Functions'>
             <header>Functions</header>
