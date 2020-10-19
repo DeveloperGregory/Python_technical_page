@@ -235,7 +235,7 @@
                 statement is as follows:
                 <div class='sample-code'>
                     <code>my_num = 42</code><br>
-                    <code>if(my_num == 42):</code><br>
+                    <code>if my_num == 42:</code><br>
                     <code>....print("The Answer") #The dots before print are to denote the 4 spaces tabbed in. Python uses whitespace to signify that this line is part of the if statement</code>
                 </div>
                 <div class='sample-output'>
@@ -254,9 +254,9 @@
                 You can combine <code>elif:</code> and <code>else:</code> statements to extend the functionality of an if statement.
                 <div class='sample-code'>
                     <code>comic_name = 'Action Comics'</code><br>
-                    <code>if(comic_name == 'The Amazing Spider-Man'): #checks to see if this is true if not it goes to the elif</code><br>
+                    <code>if comic_name == 'The Amazing Spider-Man': #checks to see if this is true if not it goes to the elif</code><br>
                     <code>....print('That is a Marvel comic')</code><br>
-                    <code>elif(comic_name == 'Action Comics': #checks to see if this is true if not it goes to the next elif or else statement</code> <br>
+                    <code>elifcomic_name == 'Action Comics': #checks to see if this is true if not it goes to the next elif or else statement</code> <br>
                     <code>....print('That is a DC comic')</code><br>
                     <code>else: #will catch anything that the other ifs and elifs did not catch</code><br> 
                     <code>...print('That is a comic I don't know.'')</code>
@@ -271,7 +271,7 @@
                 <div class='sample-code'>
                     <code>miles_per_hour = 88</code><br>
                     <code>has_plutonium = True</code><br>
-                    <code>if(miles_per_hour == 88 and has_plutonium):</code><br>
+                    <code>if miles_per_hour == 88 and has_plutonium:</code><br>
                     <code>....print('I can time travel')</code>
                 </div>
                 <div class='sample-output'>
@@ -280,7 +280,7 @@
                 <h5><strong>or</strong></h5>
                 <div class='sample-code'>
                     <code>power_source = 'lightning'</code><br>
-                    <code>if(power_source == 'lightning' or power_source == 'plutonium'</code><br>
+                    <code>if power_source == 'lightning' or power_source == 'plutonium':</code><br>
                     <code>....print('1.21 gigawatts!!!')</code><br>
                     <code>else:</code><br>
                     <code>....print('You are stuck in 1955!!!'')</code>
@@ -355,7 +355,7 @@
         <section class='main-section' id='Dictionaries'>
             <header>Dictionaries</header>
             <p>
-                Dictionaries hold key, value pairs and use the <code>{}</code> to be created and the<code>['key name in quotes']</code> notation to identify the value of that key.  
+                Dictionaries hold key/value pairs and use the <code>{}</code> to be created and the<code>['key name in quotes']</code> notation to identify the value of that key.  
                 <div class='sample-code'>
                     <code>new_dict = {</code><br>
                     <code>'first' : 1,</code><br> 
@@ -371,12 +371,124 @@
         </section>
         <section class='main-section' id='Functions'>
             <header>Functions</header>
+            <p>
+                A function is a pre-written chunck of code that can be ran everytime the function is called.
+                <div class='sample-code'>
+                    <code>def say_hello():</code><br>
+                    <code>...print("Hello!")</code><br>
+                    <code></code><br>
+                    <code>for i in range(1,10):</code><br>
+                    <code>...say_hello()</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>Hello!</samp><br>
+                    <samp>Hello!</samp><br>
+                    <samp>Hello!</samp><br>
+                    <samp>Hello!</samp><br>
+                    <samp>Hello!</samp><br>
+                    <samp>Hello!</samp><br>
+                    <samp>Hello!</samp><br>
+                    <samp>Hello!</samp><br>
+                    <samp>Hello!</samp><br>
+                    <samp>Hello!</samp>
+                </div>
+            </p>
+            <p>
+                Functions can also <code>return</code> information.
+                <div class='sample-code'>
+                    <code>def is_happy(mood):</code><br>
+                    <code>....if mood == 'happy':</code><br>
+                    <code>........return True</code><br>
+                    <code>....else:</code><br>
+                    <code>........return False</code><br>
+                    <code></code><br>
+                    <code>print(is_happy('sad'))</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>False</samp>
+                </div>
+            </p>
+            <p>
+                Functions can be passed arguments or parameters to be used inside the function.
+                <div class='sample-code'>
+                    <code>def add_em(a,b):</code><br>
+                    <code>....return a + b;</code><br> 
+                    <code></code><br>
+                    <code>print(add_em(36,6) #this calls the function directly and then prints it out</code><br> 
+                    <code>new_sum = add_em(42, 5) #this calls the function and stores the return into a variable</code><br> 
+                    <code>print(new_sum)</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>42</samp><br>
+                    <samp>47</samp>
+                </div>
+                
+            </p>
         </section>
         <section class='main-section' id='Classes'>
             <header>Classes</header>
+            <p>
+                Classes are used to define an object.  Objects have properties that store diffrent bits of information.  Think of classes as a way to be a custom variable type.
+                <div class='sample-code'>
+                    <code>class Starship:</code><br>
+                    <code>....engines = 6</code><br>
+                    <code></code><br>
+                    <code>print(Starship.engines)</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>6</samp>
+                </div>
+            </p>
+            <p>
+                You can build classes by using the <code>__init___()</code> function which allows you to build a class that follows a guideline.
+                <div class='sample-code'>
+                    <code>class Starship:</code><br>
+                    <code>....def __init__(self, name, crew_cap, max_speed):</code><br>
+                    <code>........self.name = name</code><br>
+                    <code>........self.crew_cap = crew_cap</code><br>
+                    <code>........self.max_speed = max_speed</code><br>
+                    <code></code><br>
+                    <code>NCC-1701 = Starship('Enterprise',430, 'As fast as the plot')</code><br>
+                    <code>print(NCC-1701.name)</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>Enterprise</samp>
+                </div>
+            </p>
+            <p>
+                You can also add functions into classes these are called methods but they function like functions.
+                <div class='sample-code'>
+                    <code>class Starship:</code><br>
+                    <code>....def __init__(self, name, crew_cap, max_speed):</code><br>
+                    <code>........self.name = name</code><br>
+                    <code>........self.crew_cap = crew_cap</code><br>
+                    <code>........self.max_speed = max_speed</code><br>
+                    <code></code><br>
+                    <code>....def warp_speed_scotty():</code><br>
+                    <code>........print('Aye, Aye Captain!')</code><br>
+                    <code></code><br>
+                    <code>NCC-1701 = Starship('Enterprise',430, 'As fast as the plot')</code><br>
+                    <code>print(NCC-1701.name)</code><br>
+                    <code>NCC-1701.warp_speed_scotty() #this is still called like a function</code>
+                </div>
+                <div class='sample-output'>
+                    <samp>Enterprise</samp><br>
+                    <samp>Aye, Aye Captain!</samp>
+                </div>
+            </p>
         </section>
         <section class='main-section' id='Modules'>
             <header>Modules</header>
+            <p>
+                Modules are prewritten code that can be imported into your code and used. You can prewrite this code or you can import another person's code 
+                they have made avaialbe to the public.  You can find Modules at <a href="https://pypi.org/">Python Modules</a>.<br>You import modules as follows:  
+                <div class='sample-code'>
+                    <code>import my_module #loads your my_module.py if it is in the same directory as the main program</code><br>
+                    <code>import os #this will load a module that is used for operating system functions</code><br>
+                    <code>import datetime as dt #this loads another module but changes its naming reference to dt</code><br>
+                    <code>from tkinter import messagebox as mb #this loads only one method from the tkinter module and changes its name reference to messagebox</code><br>
+                </div>
+            </p>
         </section>
     </main>
     
